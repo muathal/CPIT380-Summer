@@ -32,7 +32,7 @@ def body(header1,header20,header21,header22,parah1,pararh20,pararh21,pararh22):
     </html>
     """ % (header1,parah1,header20,pararh20,header21,pararh21,header22,pararh22)
     return htmlBody
-header1 = "Welcome to Muath Alhurtumi's personal blog"
+header1 = "Welcome to Muath Alhuumi's personal blog"
 para1 = """good morning, good afternoon and good evening my fellow visitor
 In eid Al-Adha I took a selfie with my cousin's cocktail
 """
