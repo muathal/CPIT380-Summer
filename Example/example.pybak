@@ -1,0 +1,19 @@
+
+def encode(string, keyletters):
+  alpha="abcdefghijklmnopqrstuvwxyz"
+  secret = ""
+  for letter in string:
+    index = alpha.find(letter)
+    secret = secret+keyletters[index]
+  return secret
+def decode(secret , keyletters):
+  alpha="abcdefghijklmnopqrstuvwxyz "
+  clear = ""
+  for letter in secret:
+    index = keyletters.find(letter)
+    clear = clear+alpha[index]
+  return clear
+secert = encode("apple","cdefghijklmnopqrstuvwxyzab ")
+clear = decode(secert,"cdefghijklmnopqrstuvwxyzab ")
+printNow(secert)
+printNow(clear)
